@@ -11,22 +11,6 @@ body{
 
 }
 
-@media screen and (max-width: 1280px){
-
-	body{
-		width: auto;
-
-	}
-	
-}
-
-/*Body*/
-
-#blocpage{
-	width: 95%;
-	margin: auto;
-}
-
 /*Header*/
 
 header{
@@ -39,14 +23,23 @@ header{
 }
 
 .logo__img{
-	height: 40px;
-	width: 20%;
+	height: 60px;
+	min-width: 40px;
+	margin-left: 20px;
+	
+}
+
+nav{
+	width: 80%;
+	margin-left: 20px;
+	margin-right: 20px;
+	
 }
 
 .nav{
-	width: 80%;
 
 	display: flex;
+	justify-content: flex-end;
 
 }
 
@@ -54,43 +47,49 @@ header{
 
     text-decoration: none;
     list-style: none;
-    margin: 10px;
+    padding-right: 10px;
+
 
 }
 
-v.nav__link--sign{
+#nav__link--sign{
 
 	font-weight: bold;
 	color:#0065FC;
+
 }
 
-a:hover{
+#nav__link--hover:hover{
 	border-top: 2px solid #0065FC;
 	color: #0065FC;
 }
 
-/*Formulaire recherche*/
+#nav__link--sign:hover{
 
-#titre_search{
-	display: flex;
-	flex-direction: column;
+	border-top: 2px solid #0065FC;
 
 }
 
-.titre_search{
+/*Formulaire recherche*/
 
-	margin-top: -10px;
+.search{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.search__titre{
+
+	display: flex;
+	flex-direction: column;
 
 }
 
 #block_search{
 
 	display: flex;
-	
 	align-items: center;
 
 }
-
 
 #local{
 
@@ -153,6 +152,7 @@ a:hover{
 	display: flex;
 	flex-wrap: wrap;
 	margin-top: 25px;
+	margin-left: 20px;
 	margin-bottom: 25px;
 	
 }
@@ -218,6 +218,7 @@ a:hover{
 	justify-content: flex-start;
 	align-items: center;
 	margin-top: 25px;
+	margin-left: 20px;
 }
 
 .icon_info{
@@ -236,11 +237,12 @@ a:hover{
 
 /*Hebergements*/
 
-section.sec_heb{
+.sec_heb{
 	display: flex;
+	margin-left: 20px;
+	margin-right: 20px;
 	
 }
-
 
 aside{
 
@@ -248,7 +250,6 @@ aside{
 	position: relative;
 
 }
-
 
 h2.titre_heb{
 
@@ -505,6 +506,11 @@ a.plus_heb{
 }
 
 /*Activités*/
+section.act__pop{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
 
 #act{
 	display: flex;
