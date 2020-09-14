@@ -183,6 +183,10 @@ nav{
 
 }
 
+.itwt{
+	display: flex;
+}
+
 .icon_filtres{
 
 	border-radius: 40px;
@@ -242,13 +246,6 @@ nav{
 	margin-left: 20px;
 	margin-right: 20px;
 	
-}
-
-aside{
-
-	flex: 1.2;
-	position: relative;
-
 }
 
 h2.titre_heb{
@@ -358,7 +355,10 @@ a.plus_heb{
 	height: 25px;
 }
 
-#heb_pop{
+.heb_pop{
+
+	flex: 1.2;
+	position: relative;
 
 	background-color: #F2F2F2;
 
@@ -478,31 +478,6 @@ a.plus_heb{
 	
 
 
-}
-
-@media screen and (max-width: 1280px){
-
-	
-	section{
-
-		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
-		align-content: center;
-	}
-
-	article{
-
-		width: 400px;
-	}
-
-	aside{
-		
-		margin-top: 25px;
-		width: 400px;
-
-
-	}
 }
 
 /*Activités*/
@@ -676,22 +651,9 @@ section.act__pop{
 
 }
 
-@media screen and (max-width: 1280px) {
-	
-	#act{
-		display: flex;
-		flex-direction: column;
-	}
-
-	article.int_carte{
-		display: flex;
-		flex-direction: column;
-	}
-}
-
 /*Footer*/
 
-#footer{
+.footer{
 	margin-top: 50px;
 
 	background-color: #F2F2F2;
@@ -719,14 +681,6 @@ a{
 	color: #000000
 }
 
-@media screen and (max-width: 1280px) {
-	
-	#footer{
-		display: flex;
-		flex-direction: column;
-	}
-
-}
 
 /*Body_error*/
 
@@ -739,4 +693,74 @@ a{
 	background-repeat: no-repeat;
 }
 
+/*Media Queries*/
+
+/*
+Les très petits écrans (< 768 px : pour les écrans dont la largeur est comprise entre 0 px et 768 px)
+Tablettes (768 px - 991 px)
+Ordinateurs (992 px - 1199 px)
+Grands écrans d'ordinateurs et télévisions
+*/
+
+@media screen and (max-width: 990px){
+
+	
+	section{
+
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: space-around;
+		align-content: center;
+	}
+
+	article{
+
+		width: 400px;
+	}
+
+	aside{
+		
+		margin-top: 25px;
+		width: 400px;
+	}
+
+	section.act__pop{
+		
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		height: auto;
+		width: 400px;
+	}
+
+	#act{
+		
+		display: flex;
+		flex-direction: column;
+
+	}
+
+	.int_carte{
+		
+		display: flex;
+		flex-direction: column;
+
+		width: 99.9%;
+		height: auto;
+	}
+
+	.carte_act{
+		margin: 5px;
+	}
+
+	.carte_act1{
+		margin: 5px;
+	}
+
+	.carte_act2{
+		margin: 5px;
+	}
+
+}
 
