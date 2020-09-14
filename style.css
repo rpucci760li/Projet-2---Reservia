@@ -7,6 +7,7 @@ src: 	url('raleway/Raleway-VariableFont_wght.ttf') format('truetype'),
 /*Polices*/
 
 body{
+
 	font-family: "raleway",arial, sans serif;
 
 }
@@ -19,24 +20,25 @@ header{
 	justify-content: space-between;
 	align-items: center;
 
+	margin: 20px;
+
 
 }
 
 .logo__img{
+
 	height: 60px;
 	min-width: 40px;
 	margin-left: 20px;
 	
 }
 
-nav{
+
+.nav{
+
 	width: 80%;
 	margin-left: 20px;
 	margin-right: 20px;
-	
-}
-
-.nav{
 
 	display: flex;
 	justify-content: flex-end;
@@ -72,13 +74,9 @@ nav{
 
 /*Formulaire recherche*/
 
-.search{
-	margin-left: 20px;
-	margin-right: 20px;
-}
-
 .search__titre{
 
+	margin: 20px;
 	display: flex;
 	flex-direction: column;
 
@@ -86,8 +84,8 @@ nav{
 
 #block_search{
 
+	margin: 20px;
 	display: flex;
-	align-items: center;
 
 }
 
@@ -160,9 +158,7 @@ i.fa-search{
 #filtres{
 	display: flex;
 	flex-wrap: wrap;
-	margin-top: 25px;
-	margin-left: 20px;
-	margin-bottom: 25px;
+	margin: 20px;
 	
 }
 
@@ -172,8 +168,8 @@ i.fa-search{
 
 
 #titre_themes{
-	margin-left: 10px;
-	margin-right: 50px;
+
+	margin-right: 25px;
 	font-weight: bold;
 }
 
@@ -199,7 +195,6 @@ i.fa-search{
 	margin-right: -25px;
 
 }
-
 
 .word_themes{
 	width: 170px;
@@ -243,7 +238,6 @@ i.fa-search{
 	margin-right: 25px;
 
 }
-
 
 /*Hebergements*/
 
@@ -694,14 +688,30 @@ Grands écrans d'ordinateurs et télévisions
 @media screen and (max-width: 990px)
 
 {
+	body{
+		width: 130%;
+
+		margin: auto;
+	}
+
+	header{
+		margin: 0;
+	}
 
 	/*Rechercher*/
 
+	#block_search{
+		display: flex;
+
+		width: 100%;
+
+		
+	}
+
 	#local{
 
-		height: 70px;
-		width: 70px;
-
+		height: 60px;
+		width: 60px;
 
 	}
 
@@ -721,8 +731,8 @@ Grands écrans d'ordinateurs et télévisions
 		background-color: #0065FC;
 		color: white;
 
-		height: 70px;
-		width: 70px;
+		height: 60px;
+		width: 60px;
 
 		font-size: 20px;
 
@@ -735,8 +745,8 @@ Grands écrans d'ordinateurs et télévisions
 
 	#text_city{
 	
-		width: 320px;
-		height: 70px;
+		width: 200px;
+		height: 60px;
 
 		font-size: 25px;
 	
@@ -748,6 +758,8 @@ Grands écrans d'ordinateurs et télévisions
 
 	display: flex;
 	flex-direction: column;
+
+	width: 99.9%;
 	
 	}
 
@@ -768,16 +780,12 @@ Grands écrans d'ordinateurs et télévisions
 
 		display: flex;
 		flex-direction: column-reverse;
-		justify-content: space-around;
-		align-content: center;
 
 		margin-left: 0;
 		margin-right: 0;
 	}
 
 	article.house{
-
-		width: 99.9%;
 
 		background-color: white;
 	}
