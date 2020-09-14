@@ -166,18 +166,15 @@ i.fa-search{
 	
 }
 
+#block_filtres{
+	display: flex;
+}
+
 
 #titre_themes{
 	margin-left: 10px;
 	margin-right: 50px;
 	font-weight: bold;
-}
-
-#filtres_themes{
-	display: flex;
-	align-items: center;
-	width: 90%;
-	
 }
 
 .icon_filtres{
@@ -694,7 +691,9 @@ Ordinateurs (992 px - 1199 px)
 Grands écrans d'ordinateurs et télévisions
 */
 
-@media screen and (max-width: 990px){
+@media screen and (max-width: 990px)
+
+{
 
 	/*Rechercher*/
 
@@ -743,7 +742,28 @@ Grands écrans d'ordinateurs et télévisions
 	
 	}
 
+	/*Filtres*/
+
+	#filtres{
+
+	display: flex;
+	flex-direction: column;
+	
+	}
+
+	#block_filtres{
+	
+		display: flex;
+		flex-wrap: wrap;
+
+	}
+
+	.itwt{
+		margin: 10px;
+	}
+
 	/*Hébergements*/
+
 	section.sec_heb{
 
 		display: flex;
