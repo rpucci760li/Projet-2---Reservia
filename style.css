@@ -97,9 +97,11 @@ nav{
 	align-items: center;
 	justify-content: center;
 
-	height: 40px;
+	height: 50px;
 	width: 60px;
-	background-size: 30%;
+
+	font-size: 20px;
+	
 	background-color: #F2F2F2;
 	border-top-left-radius: 20%;
 	border-bottom-left-radius: 20%;
@@ -113,9 +115,13 @@ nav{
 	align-items: center;
 
 	
-	width: 150px;
-	height: 40px;
-	padding-left: 5px;
+	width: 200px;
+	height: 50px;
+
+	font-size: 16px;
+	font-weight: bold;
+
+	padding-left: 10px;
 	border-top: 1px solid #F2F2F2;
 	border-bottom: 1px solid #F2F2F2;
 	border-left: none;
@@ -133,7 +139,7 @@ nav{
 	background-color: #0065FC;
 	color: white;
 
-	height: 40px;
+	height: 50px;
 	width: 100px;
 
 	border-top-right-radius: 1em;
@@ -145,6 +151,9 @@ nav{
 	
 }
 
+i.fa-search{
+	display: none;
+}
 
 /*Filtres*/
 
@@ -377,7 +386,7 @@ a.plus_heb{
 	justify-content: space-around;
 	align-items: center;
 
-	margin-top: 50px;
+	margin-top: 30px;
 }
 
 #space_heb_pop{
@@ -481,7 +490,7 @@ a.plus_heb{
 }
 
 /*Activités*/
-section.act__pop{
+section.act{
 	margin-left: 20px;
 	margin-right: 20px;
 }
@@ -596,23 +605,6 @@ section.act__pop{
 	box-shadow: 1px 1px 5px #E2E0E0;
 }
 
-.gphoto4{
-
-	background-image: url(images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-
-	position: relative;
-	
-	width: 300px;
-	height: 180px;
-
-	border-radius: 30px;
-
-	box-shadow: 1px 1px 5px #E2E0E0;
-}
-
 .gphoto5{
 
 	background-image: url(images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
@@ -704,34 +696,149 @@ Grands écrans d'ordinateurs et télévisions
 
 @media screen and (max-width: 990px){
 
+	/*Rechercher*/
+
+	#local{
+
+		height: 70px;
+		width: 70px;
+
+
+	}
+
+	#button_city{
+
+		display: none;
 	
-	section{
+	}
+
+	i.fa-search{
+
+		display: flex;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+
+		background-color: #0065FC;
+		color: white;
+
+		height: 70px;
+		width: 70px;
+
+		font-size: 20px;
+
+		border-radius: 1em;
+		border: none;
+
+		margin-left: -25px;
+
+	}
+
+	#text_city{
+	
+		width: 320px;
+		height: 70px;
+
+		font-size: 25px;
+	
+	}
+
+	/*Hébergements*/
+	section.sec_heb{
 
 		display: flex;
 		flex-direction: column-reverse;
 		justify-content: space-around;
 		align-content: center;
+
+		margin-left: 0;
+		margin-right: 0;
 	}
 
-	article{
+	article.house{
 
-		width: 400px;
+		width: 99.9%;
+
+		background-color: white;
+	}
+
+	.block_heb{
+	width: 90%;
+	height: 220px;
+	
+	}
+
+	.img_heb{
+	
+	width: 97.5%;
+	height: 120px;
+
+
+	}
+
+	/*Hébergements populaires*/
+	.heb_pop{
+
+	margin: 0;
+	
+	border-top-right-radius: 0;
+	border-top-left-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+	.block_heb_pop{
+
+	width: 90%;
+	height: 180px;
+
+	}
+
+	#titre_heb_pop{
+		margin-top: 0;
+	}
+
+	.img_pop1{
+
+	width: 180px;
+	height: 170px;
+
+	}
+
+	.img_pop2{
+
+	width: 180px;
+	height: 170px;
+
+	}
+
+	.img_pop3{
+
+	width: 180px;
+	height: 170px;
+
 	}
 
 	aside{
 		
 		margin-top: 25px;
-		width: 400px;
+		width: 99.9%;
 	}
 
-	section.act__pop{
+	/*Activités*/
+	section.act{
 		
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 
 		height: auto;
-		width: 400px;
+		width: 99.9%;
+
+		margin-left: 0px;
+		margin-right: 0px;
+
+
 	}
 
 	#act{
@@ -745,21 +852,82 @@ Grands écrans d'ordinateurs et télévisions
 		
 		display: flex;
 		flex-direction: column;
+		align-items: center;
 
 		width: 99.9%;
 		height: auto;
 	}
 
-	.carte_act{
-		margin: 5px;
+	.gphoto{
+
+
+		width: 400px;
+		height: 180px;
+
+		margin: 10px;
+
 	}
 
-	.carte_act1{
-		margin: 5px;
+	.gphoto1{
+
+		width: 400px;
+		height: 180px;
+
+		margin: 10px;
 	}
 
-	.carte_act2{
-		margin: 5px;
+	.gphoto2{
+
+		width: 400px;
+		height: 180px;
+
+		margin: 10px;
+	}
+
+	.gphoto3{
+
+		width: 400px;
+		height: 180px;
+
+		margin: 10px;
+	}
+
+	.gphoto4{
+
+		width: 400px;
+		height: 180px;
+
+		margin: 10px;
+	}
+
+	.gphoto5{
+
+		width: 400px;
+		height: 180px;
+
+		margin: 10px;
+	}	
+
+	.text_photo_act{
+
+	
+	width: 400px;
+	height: 50px;
+
+	}
+
+	/*Footer*/
+	.footer{
+	 	
+	 	height: auto;
+
+		display: flex;
+		flex-direction: column;
+
+	}
+
+	.nav_foot{
+		width: auto;
 	}
 
 }
