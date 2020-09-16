@@ -40,30 +40,41 @@ body{
 	
 }
 
+/*Navigation*/
 
 .nav{
 
-
 	display: flex;
 	justify-content: space-around;
+	align-items: center;
+
+	height: 60px;
 	
 
 }
 
 .nav__link{
 
-    text-decoration: none;
+    margin-right: 20px;
+
     list-style: none;
 
-    margin-right: 20px;
 }
 
-a.nav__link--hover:hover{
+.nav__deco{
+
+	text-decoration: none;
+    color: black;
+
+}
+
+.nav__deco:hover{
 
 	border-top: 2px solid #0065FC;
 	color: #0065FC;
 
 	padding-top: 30px;
+
 }
 
 
@@ -195,6 +206,7 @@ a.nav__link--hover:hover{
 	align-items: center;
 
 	background-color: #DEEBFF;
+
 	width: 50px;
 	height: 50px;
 
@@ -293,7 +305,7 @@ a.nav__link--hover:hover{
 	border-bottom-left-radius: 30px;
 }
 
-#space_heb{
+.space_heb{
 
 	display: flex;
 	justify-content: space-around;
@@ -395,7 +407,8 @@ a.plus_heb{
 	border-bottom-left-radius: 30px;
 }
 
-#titre_heb_pop{
+.titre_heb_pop{
+
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -403,7 +416,7 @@ a.plus_heb{
 	margin-top: 30px;
 }
 
-#space_heb_pop{
+.space_heb_pop{
 
 	display: flex;
 	flex-direction: column;
@@ -413,6 +426,7 @@ a.plus_heb{
 }
 
 .block_heb_pop{
+
 	width: 300px;
 	height: 150px;
 	display: flex;
@@ -425,65 +439,46 @@ a.plus_heb{
 	border-bottom-right-radius: 30px;
 	border-bottom-left-radius: 30px;
 	box-shadow: 1px 1px 5px #E2E0E0;
+}
+
+.img_pop{
+
+	width: 100px;
+	height: 140px;
+
+	margin-top: 5px;
+	margin-left: 5px;
+
+
+	border-bottom-left-radius: 30px;
+	border-top-left-radius: 30px;
+
 }	
 
-.img_pop1{
+.one_pop{
 
 	background-image: url(images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 
-	
-	width: 100px;
-	height: 140px;
-
-	margin-top: 5px;
-	margin-left: 5px;
-
-
-	border-bottom-left-radius: 30px;
-	border-top-left-radius: 30px;
-
 }
 
-.img_pop2{
+.two_pop{
 
 	background-image: url(images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 
-	
-	width: 100px;
-	height: 140px;
-
-	margin-top: 5px;
-	margin-left: 5px;
-
-
-	border-bottom-left-radius: 30px;
-	border-top-left-radius: 30px;
-
 }
 
-.img_pop3{
+.three_pop{
 
 	background-image: url(images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-
-	
-	width: 100px;
-	height: 140px;
-
-	margin-top: 5px;
-	margin-left: 5px;
-
-
-	border-bottom-left-radius: 30px;
-	border-top-left-radius: 30px;
 
 }
 
@@ -498,19 +493,19 @@ a.plus_heb{
 	flex-direction: column;
 	justify-content: space-between;
 	
-	
-
-
 }
 
 /*Activités*/
-section.act{
+
+.activ{
+
 	margin-left: 20px;
 	margin-right: 20px;
 }
 
 
-#act{
+.activ__conten{
+
 	display: flex;
 	justify-content: space-between;
 
@@ -535,13 +530,6 @@ section.act{
 }
 
 .gphoto{
-
-	background-image: url(images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-
-	position: relative;
 	
 	width: 300px;
 	height: 400px;
@@ -549,16 +537,10 @@ section.act{
 	border-radius: 30px;
 
 	box-shadow: 1px 1px 5px #E2E0E0;
+
 }
 
-.gphoto1{
-
-	background-image: url(images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-
-	position: relative;
+.sphoto{
 	
 	width: 300px;
 	height: 180px;
@@ -566,9 +548,32 @@ section.act{
 	border-radius: 30px;
 
 	box-shadow: 1px 1px 5px #E2E0E0;
+
 }
 
-.gphoto2{
+.one{
+
+	background-image: url(images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	position: relative;
+
+}
+
+.two{
+
+	background-image: url(images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	position: relative;
+
+}
+
+.three{
 
 	background-image: url(images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
 	background-repeat: no-repeat;
@@ -577,15 +582,9 @@ section.act{
 
 	position: relative;
 	
-	width: 300px;
-	height: 180px;
-
-	border-radius: 30px;
-
-	box-shadow: 1px 1px 5px #E2E0E0;
 }
 
-.gphoto3{
+.four{
 
 	background-image: url(images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
 	background-repeat: no-repeat;
@@ -593,16 +592,10 @@ section.act{
 	background-position: center;
 
 	position: relative;
-	
-	width: 300px;
-	height: 400px;
 
-	border-radius: 30px;
-
-	box-shadow: 1px 1px 5px #E2E0E0;
 }
 
-.gphoto4{
+.five{
 
 	background-image: url(images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
 	background-repeat: no-repeat;
@@ -611,15 +604,9 @@ section.act{
 
 	position: relative;
 	
-	width: 300px;
-	height: 180px;
-
-	border-radius: 30px;
-
-	box-shadow: 1px 1px 5px #E2E0E0;
 }
 
-.gphoto5{
+.six{
 
 	background-image: url(images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
 	background-repeat: no-repeat;
@@ -628,12 +615,6 @@ section.act{
 
 	position: relative;
 	
-	width: 300px;
-	height: 180px;
-
-	border-radius: 30px;
-
-	box-shadow: 1px 1px 5px #E2E0E0;
 }
 
 .text_photo_act{
@@ -660,6 +641,7 @@ section.act{
 /*Footer*/
 
 .footer{
+
 	margin-top: 50px;
 
 	background-color: #F2F2F2;
@@ -682,7 +664,7 @@ section.act{
 	
 }
 
-a{
+.nav__foot--link{
 	text-decoration: none;
 	color: #000000
 }
@@ -781,6 +763,12 @@ Grands écrans d'ordinateurs et télévisions
 	.itwt{
 
 		margin: 10px;
+
+	}
+
+	.word_themes{
+
+
 	}
 
 	/*Hébergements*/
@@ -813,15 +801,14 @@ Grands écrans d'ordinateurs et télévisions
 	}
 
 	/*Hébergements populaires*/
+
 	.heb_pop{
 
 	margin: 0;
 	
-	border-top-right-radius: 0;
-	border-top-left-radius: 0;
-	border-bottom-right-radius: 0;
-	border-bottom-left-radius: 0;
-}
+	border-radius: 0;
+	
+	}
 
 	.block_heb_pop{
 
@@ -830,46 +817,28 @@ Grands écrans d'ordinateurs et télévisions
 
 	}
 
-	#titre_heb_pop{
-		margin-top: 0;
+	.titre_heb_pop{
+
+	margin-top: 0;
+	
 	}
 
-	.img_pop1{
+	.img_pop{
 
 	width: 180px;
 	height: 170px;
 
-	}
-
-	.img_pop2{
-
-	width: 180px;
-	height: 170px;
-
-	}
-
-	.img_pop3{
-
-	width: 180px;
-	height: 170px;
-
-	}
-
-	aside{
-		
-		margin-top: 25px;
-		width: 99%;
 	}
 
 	/*Activités*/
-	section.act{
+	
+	.activ{
 		
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 
 		height: auto;
-		width: 99%;
 
 		margin-left: 0px;
 		margin-right: 0px;
@@ -877,10 +846,11 @@ Grands écrans d'ordinateurs et télévisions
 
 	}
 
-	#act{
+	.activ__conten{
 		
 		display: flex;
 		flex-direction: column;
+		align-content: center;
 
 	}
 
@@ -888,13 +858,13 @@ Grands écrans d'ordinateurs et télévisions
 		
 		display: flex;
 		flex-direction: column;
-		align-items: center;
-
-		width: 99%;
+		align-content: center;
+		
 		height: auto;
+
 	}
 
-	.gphoto{
+	.resp{
 
 
 		width: 400px;
@@ -903,46 +873,6 @@ Grands écrans d'ordinateurs et télévisions
 		margin: 10px;
 
 	}
-
-	.gphoto1{
-
-		width: 400px;
-		height: 180px;
-
-		margin: 10px;
-	}
-
-	.gphoto2{
-
-		width: 400px;
-		height: 180px;
-
-		margin: 10px;
-	}
-
-	.gphoto3{
-
-		width: 400px;
-		height: 180px;
-
-		margin: 10px;
-	}
-
-	.gphoto4{
-
-		width: 400px;
-		height: 180px;
-
-		margin: 10px;
-	}
-
-	.gphoto5{
-
-		width: 400px;
-		height: 180px;
-
-		margin: 10px;
-	}	
 
 	.text_photo_act{
 
@@ -953,17 +883,13 @@ Grands écrans d'ordinateurs et télévisions
 	}
 
 	/*Footer*/
+
 	.footer{
 	 	
 	 	height: auto;
-
 		display: flex;
-		flex-direction: column;
+		justify-content: space-around;
 
-	}
-
-	.nav_foot{
-		width: auto;
 	}
 
 }
