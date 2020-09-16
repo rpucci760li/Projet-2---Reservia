@@ -10,38 +10,43 @@ body{
 
 	font-family: "raleway",arial, sans serif;
 
+	width: 99%;
+	margin: auto;
+
 }
 
 /*Header*/
 
-header{
+.header{
 
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 
-	margin: 20px;
-
+	padding-top: 40px;
+	margin-left: 20px;
+	margin-right: 20px;
 
 }
 
-.logo__img{
+.logo{
 
+	width: 20%;
 	height: 60px;
-	min-width: 40px;
-	margin-left: 20px;
+
+	background-image: url(images/logo/Reservia@3x.png);
+	background-size: contain;
+	background-repeat: no-repeat;
 	
 }
 
 
 .nav{
 
-	width: 80%;
-	margin-left: 20px;
-	margin-right: 20px;
 
 	display: flex;
-	justify-content: flex-end;
+	justify-content: space-around;
+	
 
 }
 
@@ -49,26 +54,23 @@ header{
 
     text-decoration: none;
     list-style: none;
-    padding-right: 10px;
 
-
+    margin-right: 20px;
 }
 
-#nav__link--sign{
+a.nav__link--hover:hover{
+
+	border-top: 2px solid #0065FC;
+	color: #0065FC;
+
+	padding-top: 30px;
+}
+
+
+.nav__link--sign{
 
 	font-weight: bold;
 	color:#0065FC;
-
-}
-
-#nav__link--hover:hover{
-	border-top: 2px solid #0065FC;
-	color: #0065FC;
-}
-
-#nav__link--sign:hover{
-
-	border-top: 2px solid #0065FC;
 
 }
 
@@ -77,28 +79,31 @@ header{
 .search__titre{
 
 	margin: 20px;
-	display: flex;
-	flex-direction: column;
 
 }
 
-#block_search{
+.block_search{
 
-	margin: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	
 	display: flex;
-
-}
-
-#local{
-
-	display: flex;
+	justify-content: flex-start;
 	align-items: center;
-	justify-content: center;
+	
 
+}
+
+.local{
+	
 	height: 50px;
 	width: 60px;
 
-	font-size: 20px;
+	font-size: 16px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	
 	background-color: #F2F2F2;
 	border-top-left-radius: 20%;
@@ -107,11 +112,7 @@ header{
 
 }
 
-#text_city{
-
-	display: flex;
-	align-items: center;
-
+.text_city{
 	
 	width: 200px;
 	height: 50px;
@@ -127,12 +128,7 @@ header{
 
 }
 
-#button_city{
-
-	display: flex;
-	align-items: center;
-	text-align: center;
-	justify-content: center;
+.button_city{
 
 	background-color: #0065FC;
 	color: white;
@@ -149,44 +145,59 @@ header{
 	
 }
 
-i.fa-search{
+.loupe{
+
 	display: none;
+
 }
 
 /*Filtres*/
 
-#filtres{
+.filtres{
+
 	display: flex;
 	flex-wrap: wrap;
-	margin: 20px;
+	
+	margin-top: 25px;
+	margin-left: 20px;
+	margin-right: 20px;
 	
 }
 
-#block_filtres{
-	display: flex;
+.titre_themes{
+
+	font-weight: bold;
+
 }
 
+.block_filtres{
 
-#titre_themes{
+	display: flex;
+
+	margin-left: 15px;
+}
+
+.itwt{
+
+	display: flex;
+	align-items: center;
 
 	margin-right: 25px;
-	font-weight: bold;
+
 }
 
 .icon_filtres{
 
 	color: #0065FC;
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
 	background-color: #DEEBFF;
 	width: 50px;
 	height: 50px;
 
-}
-
-.itwt{
-	display: flex;
 }
 
 .icon_filtres{
@@ -197,11 +208,14 @@ i.fa-search{
 }
 
 .word_themes{
+
 	width: 170px;
+
 	padding: 15px;
-	margin-right: 25px;
+	
 	vertical-align: middle;
 	text-align: center;
+
 	border-top: 2px solid #F2F2F2;
 	border-bottom: 2px solid #F2F2F2;
 	border-right: 2px solid #F2F2F2;
@@ -217,21 +231,28 @@ i.fa-search{
 
 }
 
-#info{
+/*Bloc info sous recherche*/
+
+.info{
 
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
+
 	margin-top: 25px;
 	margin-left: 20px;
+
 }
 
 .icon_info{
+
 	width: 30px;
 	height: 30px;
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
 	color: #0065FC;
 	border: 2px solid #F2F2F2;
 	border-radius: 50%;
@@ -242,19 +263,21 @@ i.fa-search{
 /*Hebergements*/
 
 .sec_heb{
+
 	display: flex;
+
 	margin-left: 20px;
 	margin-right: 20px;
 	
 }
 
-h2.titre_heb{
+.titre_heb{
 
 	margin-top: 50px;
 	margin-left: 30px;
 }
 
-article.house{
+.house{
 	
 	background-color: #F2F2F2;
 	flex:3;
@@ -700,28 +723,26 @@ Grands écrans d'ordinateurs et télévisions
 
 	/*Rechercher*/
 
-	#block_search{
-		display: flex;
+	.block_search{
 
-		width: 100%;
-
-		
-	}
-
-	#local{
-
-		height: 60px;
-		width: 60px;
+		justify-content: space-between;
 
 	}
 
-	#button_city{
+	.text_city{
+	
+		width: 80%;
+		font-size: 20px;
+	
+	}
+
+	.button_city{
 
 		display: none;
 	
 	}
 
-	i.fa-search{
+	.loupe{
 
 		display: flex;
 		align-items: center;
@@ -731,7 +752,7 @@ Grands écrans d'ordinateurs et télévisions
 		background-color: #0065FC;
 		color: white;
 
-		height: 60px;
+		height: 50px;
 		width: 60px;
 
 		font-size: 20px;
@@ -743,49 +764,36 @@ Grands écrans d'ordinateurs et télévisions
 
 	}
 
-	#text_city{
-	
-		width: 200px;
-		height: 60px;
-
-		font-size: 25px;
-	
-	}
-
 	/*Filtres*/
 
-	#filtres{
+	.filtres{
 
-	display: flex;
 	flex-direction: column;
-
-	width: 99.9%;
 	
 	}
 
-	#block_filtres{
+	.block_filtres{
 	
-		display: flex;
 		flex-wrap: wrap;
 
 	}
 
 	.itwt{
+
 		margin: 10px;
 	}
 
 	/*Hébergements*/
 
-	section.sec_heb{
+	.sec_heb{
 
-		display: flex;
 		flex-direction: column-reverse;
 
 		margin-left: 0;
 		margin-right: 0;
 	}
 
-	article.house{
+	.house{
 
 		background-color: white;
 	}
@@ -798,7 +806,7 @@ Grands écrans d'ordinateurs et télévisions
 
 	.img_heb{
 	
-	width: 97.5%;
+	width: 97%;
 	height: 120px;
 
 
@@ -850,7 +858,7 @@ Grands écrans d'ordinateurs et télévisions
 	aside{
 		
 		margin-top: 25px;
-		width: 99.9%;
+		width: 99%;
 	}
 
 	/*Activités*/
@@ -861,7 +869,7 @@ Grands écrans d'ordinateurs et télévisions
 		align-items: center;
 
 		height: auto;
-		width: 99.9%;
+		width: 99%;
 
 		margin-left: 0px;
 		margin-right: 0px;
@@ -882,7 +890,7 @@ Grands écrans d'ordinateurs et télévisions
 		flex-direction: column;
 		align-items: center;
 
-		width: 99.9%;
+		width: 99%;
 		height: auto;
 	}
 

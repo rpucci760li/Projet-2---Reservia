@@ -4,23 +4,27 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="fontawesome-free-5.14.0-web/css/all.css">
 	<title>Réservia</title>
 </head>
 
 <body>
 
-	<header id="header">
+	<header class="header">
 		
-		<div class="logo">
-			<img src="images/logo/Reservia@3x.png" alt="reservia" class="logo__img">
-		</div>
+		<div class="logo"></div>
 		
 		<nav>
 			<ul class="nav">
-				<li class="nav__link"><a id="nav__link--hover" href="index.html#1" title="Hébergements">Hébergements</a></li>
-				<li class="nav__link"><a id="nav__link--hover" href="index.html#2" title="Activités">Activités</a></li>
-				<li class="nav__link"><a id="nav__link--sign" href="error.html" title="S'incrire">S'inscrire</a></li>
+				<li class="nav__link">
+					<a class="nav__link--hover" href="index.html#1" title="Hébergements">Hébergements</a>
+				</li>
+				<li class="nav__link">
+					<a class="nav__link--hover" href="index.html#2" title="Activités">Activités</a>
+				</li>
+				<li class="nav__link">
+					<a class="nav__link--hover nav__link--sign" href="error.html" title="S'incrire">S'inscrire</a>
+				</li>
 			</ul>
 		</nav>
 
@@ -31,22 +35,20 @@
 			<p>En plein centre ville ou en pleine nature</p>
 	</div>
 
-	<div id="block_search">
+	<div class="block_search">
 
-		<i id="local" class="fas fa-map-marker-alt"></i>
-		<form method="post" action="traitement.php">
-			<input id="text_city" type="text" name="Rechercher" value="Marseille,France">
-		</form>
-		<input id="button_city" type="button" name="Rechercher" value="Rechercher">
-		<i class="fas fa-search"></i>
+		<div class="local"><i class="fas fa-map-marker-alt"></i></div> 
+		<input class="text_city" type="text" name="Rechercher" value="Marseille,France">
+		<input class="button_city" type="button" name="Rechercher" value="Rechercher">
+		<div class="loupe"><i class="fas fa-search"></i></div> 
 				
 	</div>
 
-	<div id="filtres">
+	<div class="filtres">
 		
-		<p id="titre_themes">Filtres</p>
+		<p class="titre_themes">Filtres</p>
 
-		<div id="block_filtres">
+		<div class="block_filtres">
 
 			<div class="itwt">
 				<div class="icon_filtres"><i class="fas fa-money-bill-wave"></i></div>
@@ -72,7 +74,7 @@
 
 	</div>
 
-	<div id="info">
+	<div class="info">
 		
 		<div class="icon_info"><i class="fas fa-info"></i></div>
 		<p>Plus de 500 logements sont disponibles dans cette ville</p>
