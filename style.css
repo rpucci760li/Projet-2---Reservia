@@ -44,7 +44,7 @@ body{
 
 {
 	body{
-		width: 130%;
+		width: 100%;
 
 		margin: auto;
 	}
@@ -52,7 +52,7 @@ body{
 	header{
 		margin: 0;
 	}
-
+	
 }
 
 /*Navigation*/
