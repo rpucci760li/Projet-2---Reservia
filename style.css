@@ -162,53 +162,6 @@ body{
 
 }
 
-@media screen and (max-width: 990px){
-
-	/*Rechercher*/
-
-	.block_search{
-
-		justify-content: space-between;
-
-	}
-
-	.text_city{
-	
-		width: 80%;
-		font-size: 20px;
-	
-	}
-
-	.button_city{
-
-		display: none;
-	
-	}
-
-	.loupe{
-
-		display: flex;
-		align-items: center;
-		text-align: center;
-		justify-content: center;
-
-		background-color: #0065FC;
-		color: white;
-
-		height: 50px;
-		width: 60px;
-
-		font-size: 20px;
-
-		border-radius: 1em;
-		border: none;
-
-		margin-left: -25px;
-
-	}
-
-}
-
 /*Filtres*/
 
 .filtres{
@@ -287,30 +240,6 @@ body{
 
 	background: rgb(255,255,255);
 	background: linear-gradient(90deg, rgba(255,255,255,0) 10%, rgba(0,101,252,1) 100%);
-
-}
-
-@media screen and (max-width: 990px){
-
-	/*Filtres*/
-
-	.filtres{
-
-	flex-direction: column;
-	
-	}
-
-	.block_filtres{
-	
-		flex-wrap: wrap;
-
-	}
-
-	.itwt{
-
-		margin: 10px;
-
-	}
 
 }
 
@@ -515,57 +444,6 @@ a.plus_heb{
 	height: 25px;
 }
 
-@media screen and (max-width: 990px){
-
-	/*Hébergements*/
-
-	.sec_heb{
-
-		flex-direction: column-reverse;
-
-		margin-left: 0;
-		margin-right: 0;
-	}
-
-	.house{
-
-		background-color: white;
-	}
-
-	.block_heb{
-
-		width: 90%;
-		height: 220px;
-	
-	}
-
-	.img_heb{
-	
-		width: 98%;
-		height: 120px;
-
-
-	}
-
-}
-
-@media screen and (max-width: 990px) and (orientation: landscape){
-
-	.block_heb{
-
-	height: 300px;
-
-	}
-
-	.img_heb{
-	
-	width: 98%;
-	height: 200px;
-
-	}
-
-}
-
 /*Hébergements Populaires*/
 
 .heb_pop{
@@ -671,50 +549,6 @@ a.plus_heb{
 	flex-direction: column;
 	justify-content: space-between;
 	
-}
-
-@media screen and (max-width: 990px){
-
-	/*Hébergements populaires*/
-
-	.heb_pop{
-
-	margin: 0;
-	
-	border-radius: 0;
-	
-	}
-
-	.block_heb_pop{
-
-	width: 90%;
-	height: 180px;
-
-	}
-
-	.titre_heb_pop{
-
-	margin-top: 0;
-	
-	}
-
-	.img_pop{
-
-	width: 180px;
-	height: 170px;
-
-	}
-
-}
-
-@media screen and (max-width: 990px) and (orientation: landscape){
-
-	.img_pop{
-
-	width: 360px;
-
-	}
-
 }
 
 /*Activités*/
@@ -860,7 +694,192 @@ a.plus_heb{
 
 }
 
-@media screen and (max-width: 990px){
+/*Footer*/
+
+.footer{
+
+	margin-top: 50px;
+
+	background-color: #F2F2F2;
+
+	height: 200px;
+
+	display: flex;
+	justify-content: flex-start;
+
+}
+
+.nav_foot{
+
+	width: 30%;
+
+	margin-left: 30px;
+
+	display: flex;
+	flex-direction: column;
+	
+}
+
+.nav__foot--link{
+	text-decoration: none;
+	color: #000000
+}
+
+/*Body_error*/
+
+#body_error{
+
+	height: 900px;
+	width: 500px;
+	margin: auto;
+	background-image: url(images/erreur404.jpg);
+	background-repeat: no-repeat;
+}
+
+/*Media Queries*/
+
+/*
+Les très petits écrans (< 768 px : pour les écrans dont la largeur est comprise entre 0 px et 768 px)
+Tablettes (768 px - 991 px)
+Ordinateurs (992 px - 1199 px)
+Grands écrans d'ordinateurs et télévisions
+*/
+
+@media screen and (max-width: 990px)
+
+{
+	body{
+		width: 99%;
+
+		margin: auto;
+	}
+
+	header{
+		margin: 0;
+	}
+
+	/*Rechercher*/
+
+	.block_search{
+
+		justify-content: space-between;
+
+	}
+
+	.text_city{
+	
+		width: 80%;
+		font-size: 20px;
+	
+	}
+
+	.button_city{
+
+		display: none;
+	
+	}
+
+	.loupe{
+
+		display: flex;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+
+		background-color: #0065FC;
+		color: white;
+
+		height: 50px;
+		width: 60px;
+
+		font-size: 20px;
+
+		border-radius: 1em;
+		border: none;
+
+		margin-left: -25px;
+
+	}
+
+	/*Filtres*/
+
+	.filtres{
+
+	flex-direction: column;
+	
+	}
+
+	.block_filtres{
+	
+		flex-wrap: wrap;
+
+	}
+
+	.itwt{
+
+		margin: 10px;
+
+	}
+
+	/*Hébergements*/
+
+	.sec_heb{
+
+		flex-direction: column-reverse;
+
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.house{
+
+		background-color: white;
+	}
+
+	.block_heb{
+
+		width: 90%;
+		height: 220px;
+	
+	}
+
+	.img_heb{
+	
+		width: 98%;
+		height: 120px;
+
+
+	}
+
+	/*Hébergements populaires*/
+
+	.heb_pop{
+
+	margin: 0;
+	
+	border-radius: 0;
+	
+	}
+
+	.block_heb_pop{
+
+	width: 90%;
+	height: 180px;
+
+	}
+
+	.titre_heb_pop{
+
+	margin-top: 0;
+	
+	}
+
+	.img_pop{
+
+	width: 180px;
+	height: 170px;
+
+	}
 
 	/*Activités*/
 	
@@ -914,9 +933,38 @@ a.plus_heb{
 
 	}
 
+		/*Footer*/
+
+	.footer{
+	 	
+	 	height: auto;
+		display: flex;
+		justify-content: space-around;
+
+	}
+
 }
 
 @media screen and (max-width: 990px) and (orientation: landscape){
+
+	.block_heb{
+
+	height: 300px;
+
+	}
+
+	.img_heb{
+	
+	width: 98%;
+	height: 200px;
+
+	}
+
+	.img_pop{
+
+	width: 360px;
+
+	}
 
 	.text_photo_act{
 
@@ -934,89 +982,6 @@ a.plus_heb{
 	}
 
 }
-
-/*Footer*/
-
-.footer{
-
-	margin-top: 50px;
-
-	background-color: #F2F2F2;
-
-	height: 200px;
-
-	display: flex;
-	justify-content: flex-start;
-
-}
-
-.nav_foot{
-
-	width: 30%;
-
-	margin-left: 30px;
-
-	display: flex;
-	flex-direction: column;
-	
-}
-
-.nav__foot--link{
-	text-decoration: none;
-	color: #000000
-}
-
-@media screen and (max-width: 990px){
-
-		/*Footer*/
-
-	.footer{
-	 	
-	 	height: auto;
-		display: flex;
-		justify-content: space-around;
-
-	}
-
-}
-
-/*Body_error*/
-
-#body_error{
-
-	height: 900px;
-	width: 500px;
-	margin: auto;
-	background-image: url(images/erreur404.jpg);
-	background-repeat: no-repeat;
-}
-
-/*Media Queries*/
-
-/*
-Les très petits écrans (< 768 px : pour les écrans dont la largeur est comprise entre 0 px et 768 px)
-Tablettes (768 px - 991 px)
-Ordinateurs (992 px - 1199 px)
-Grands écrans d'ordinateurs et télévisions
-*/
-
-@media screen and (max-width: 990px)
-
-{
-	body{
-		width: 99%;
-
-		margin: auto;
-	}
-
-	header{
-		margin: 0;
-	}
-	
-}
-
-	
-
 	
 
 	
