@@ -40,21 +40,6 @@ body{
 	
 }
 
-@media screen and (max-width: 990px)
-
-{
-	body{
-		width: 100%;
-
-		margin: auto;
-	}
-
-	header{
-		margin: 0;
-	}
-	
-}
-
 /*Navigation*/
 
 .nav{
@@ -1015,7 +1000,20 @@ Ordinateurs (992 px - 1199 px)
 Grands écrans d'ordinateurs et télévisions
 */
 
+@media screen and (max-width: 990px)
 
+{
+	body{
+		width: 99%;
+
+		margin: auto;
+	}
+
+	header{
+		margin: 0;
+	}
+	
+}
 
 	
 
