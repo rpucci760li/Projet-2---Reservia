@@ -10,7 +10,7 @@ body{
 
 	font-family: "raleway",arial, sans serif;
 
-	width: 95%;
+	width: 90%;
 	height: auto;
 
 	margin: auto;
@@ -55,7 +55,7 @@ body{
 
 .nav__link{
 
-    padding-right: 20px;
+    padding-right: 30px;
     list-style: none;
 
 }
@@ -73,6 +73,8 @@ body{
 	color: #0065FC;
 
 	padding-top: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
 
 }
 
@@ -699,8 +701,8 @@ Ordinateurs (992 px - 1199 px)
 Grands écrans d'ordinateurs et télévisions
 */
 
-@media screen and (max-width: 700px){
-	
+@media screen and (max-width: 767px){
+
 
 	/*Rechercher*/
 
@@ -752,6 +754,11 @@ Grands écrans d'ordinateurs et télévisions
 		flex-direction: column;
 		padding-left: 20px;
 	
+	}
+
+	.block_filtres{
+
+		flex-wrap: wrap;
 	}
 
 	.itwt{
@@ -926,7 +933,7 @@ Ordinateurs (992 px - 1199 px)
 Grands écrans d'ordinateurs et télévisions
 */
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1199px){
 
 	.text_city{
 	
