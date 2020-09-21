@@ -813,6 +813,13 @@ Grands écrans d'ordinateurs et télévisions
 
 	}
 
+	.space_heb{
+
+		display: flex;
+		flex-direction: column;
+		
+	}
+
 	.titre_heb{
 
 	width: 90%;
@@ -821,8 +828,6 @@ Grands écrans d'ordinateurs et télévisions
 
 	.block_heb{
 
-		display: flex;
-		flex-direction: column;
 		height: 220px;
 	
 	}
