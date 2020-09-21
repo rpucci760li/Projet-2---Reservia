@@ -805,8 +805,11 @@ Grands écrans d'ordinateurs et télévisions
 	}
 
 	.house{
+	
 
-		background-color: white;
+	width: 90%;
+
+	background-color: white;
 
 	}
 
@@ -814,7 +817,7 @@ Grands écrans d'ordinateurs et télévisions
 
 	width: 90%;
 	
-}
+	}
 
 	.block_heb{
 
