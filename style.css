@@ -85,11 +85,6 @@ body{
 
 /*Formulaire recherche*/
 
-.search__titre{
-
-	padding: 20px;
-
-}
 
 .block_search{
 	
@@ -97,7 +92,6 @@ body{
 	justify-content: flex-start;
 	align-items: center;
 	
-
 }
 
 .local{
@@ -544,8 +538,8 @@ body{
 
 .int_carte{
 
-	width: 45%;
-	height: 400px;
+	width: 50%;
+	height: auto;
 
 	display: flex;
 	justify-content: space-around;
@@ -569,6 +563,12 @@ body{
 
 	box-shadow: 1px 1px 5px #E2E0E0;
 
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	position: relative;
+
 }
 
 .sphoto{
@@ -580,71 +580,47 @@ body{
 
 	box-shadow: 1px 1px 5px #E2E0E0;
 
-}
-
-.one{
-
-	background-image: url(images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 
 	position: relative;
+
+}
+
+.one{
+
+	background-image: url(images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
 
 }
 
 .two{
 
 	background-image: url(images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-
-	position: relative;
 
 }
 
 .three{
 
 	background-image: url(images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-
-	position: relative;
 	
 }
 
 .four{
 
 	background-image: url(images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-
-	position: relative;
 
 }
 
 .five{
 
 	background-image: url(images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-
-	position: relative;
 	
 }
 
 .six{
 
 	background-image: url(images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-
-	position: relative;
 	
 }
 
@@ -681,6 +657,8 @@ body{
 
 	display: flex;
 	justify-content: flex-start;
+
+	padding-bottom: 25px;
 
 }
 
@@ -720,17 +698,13 @@ Ordinateurs (992 px - 1199 px)
 Grands écrans d'ordinateurs et télévisions
 */
 
-@media screen and (max-width: 414px){
+@media screen and (max-width: 700px){
 
 	body{
+
 		width: 99%;
-
 		margin: auto;
-	}
 
-	header{
-
-		margin: 0;
 	}
 
 	/*Rechercher*/
@@ -780,15 +754,9 @@ Grands écrans d'ordinateurs et télévisions
 
 	.filtres{
 
-	flex-direction: column;
-	padding-left: 20px;
+		flex-direction: column;
+		padding-left: 20px;
 	
-	}
-
-	.block_filtres{
-	
-		flex-wrap: wrap;
-
 	}
 
 	.itwt{
@@ -807,13 +775,15 @@ Grands écrans d'ordinateurs et télévisions
 
 	.house{
 
-	display: flex;
-	flex-direction: column;
-	align-content: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 
-	width: 375px;
+		width: auto;
 
-	background-color: white;
+		margin-right: 0px;
+
+		background-color: white;
 
 	}
 
@@ -827,7 +797,10 @@ Grands écrans d'ordinateurs et télévisions
 
 	.titre_heb{
 
-	width: 90%;
+		width: 90%;
+		text-align: center;
+
+		padding-left: 0px;
 	
 	}
 
@@ -866,7 +839,7 @@ Grands écrans d'ordinateurs et télévisions
 
 	.block_heb_pop{
 
-	width: 90%;
+	width: auto;
 	height: 180px;
 
 	}
@@ -908,7 +881,7 @@ Grands écrans d'ordinateurs et télévisions
 		flex-direction: column;
 		align-content: center;
 		
-		width: 90%;
+		width: 350px;
 		height: auto;
 
 	}
@@ -917,8 +890,10 @@ Grands écrans d'ordinateurs et télévisions
 	.resp{
 
 
-		width: 360px;
+		width: 350px;
 		height: 180px;
+
+		margin: 10px;
 
 	}
 
@@ -949,7 +924,212 @@ Grands écrans d'ordinateurs et télévisions
 
 }
 
+/*
+Les très petits écrans (< 768 px : pour les écrans dont la largeur est comprise entre 0 px et 768 px)
+Tablettes (768 px - 991 px)
+Ordinateurs (992 px - 1199 px)
+Grands écrans d'ordinateurs et télévisions
+*/
+
+@media screen and (max-width: 1024px){
+
+	body{
+
+		width: 95%;
+		margin: auto;
+
+	}
+
+	.text_city{
 	
+		width: 50%;
+		font-size: 20px;
+	
+	}
+
+	/*Filtres*/
+
+	.titre_themes{
+
+		padding-left: 25px;
+	
+	}
+
+	.block_filtres{
+	
+		flex-wrap: wrap;
+
+	}
+
+	.itwt{
+
+		margin: 10px;
+
+	}
+
+	/*Hébergements*/
+
+	.sec_heb{
+
+		flex-direction: column;
+		align-content: center;
+	}
+
+	.house{
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		width: auto;
+
+		margin-right: 0px;
+		margin-bottom: 10px;
+
+	}
+
+	.space_heb{
+
+		display: flex;
+		align-content: center;
+
+	}
+
+	.titre_heb{
+
+	width: 90%;
+	text-align: center;
+
+	padding-left: 0px;
+	
+	}
+
+	.block_heb{
+
+		width: 350px;
+	
+	}
+
+	.img_heb{
+	
+		width: 98%;
+		height: 120px;
+
+	}
+
+	.plus_heb{
+
+	width: 90%;
+
+	}
+
+	/*Hébergements populaires*/
+
+	.heb_pop{
+
+	display: flex;
+	flex-direction: column;
+
+	width: auto;
+	margin: 0;
+	
+	border-radius: 0;
+	
+	}
+
+	.space_heb_pop{
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	}
+
+	.block_heb_pop{
+
+	width: 350px;
+	height: 180px;
+
+	}
+
+	.titre_heb_pop{
+
+	justify-content: space-around;
+	margin-top: 0;
+	
+	}
+
+	.img_pop{
+
+	width: 180px;
+	height: 170px;
+
+	}
+
+	/*Activités*/
+	
+	.activ{
+		
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+	}
+
+	.activ__conten{
+		
+		display: flex;
+		align-content: center;
+
+	}
+
+	.int_carte{
+		
+		display: flex;
+		flex-direction: column;
+		
+		width: 350px;
+		height: auto;
+
+		margin: 10px;
+
+	}
+
+
+	.resp{
+
+
+		width: 350px;
+		height: 180px;
+
+	}
+
+	.text_photo_act{
+
+	
+	width: 360px;
+	height: 50px;
+
+	}
+
+		/*Footer*/
+
+	.footer{
+	 	
+	 	height: auto;
+		display: flex;
+		justify-content: space-around;
+
+	}
+
+	.nav_foot{
+
+	width: 90%;
+	
+}
+
+}	
 
 	
 
