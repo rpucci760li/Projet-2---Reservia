@@ -534,11 +534,6 @@ body{
 
 /*Activités*/
 
-.activ{
-
-	
-}
-
 
 .activ__conten{
 
@@ -549,7 +544,7 @@ body{
 
 .int_carte{
 
-	width: 50%;
+	width: 45%;
 	height: 400px;
 
 	display: flex;
@@ -726,6 +721,7 @@ Grands écrans d'ordinateurs et télévisions
 */
 
 @media screen and (max-width: 990px){
+
 	body{
 		width: 99%;
 
