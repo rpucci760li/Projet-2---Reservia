@@ -830,6 +830,7 @@ Grands écrans d'ordinateurs et télévisions
 
 	.block_heb{
 
+		width: 90%;
 		height: 220px;
 	
 	}
@@ -853,7 +854,7 @@ Grands écrans d'ordinateurs et télévisions
 
 	display: flex;
 	flex-direction: column;
-	
+
 	width: 375px;
 	margin: 0;
 	
