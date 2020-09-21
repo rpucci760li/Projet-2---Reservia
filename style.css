@@ -802,16 +802,19 @@ Grands écrans d'ordinateurs et télévisions
 
 		flex-direction: column-reverse;
 
-		margin-left: 0;
-		margin-right: 0;
 	}
 
 	.house{
 
 		background-color: white;
 
-		width: 360px;
 	}
+
+	.titre_heb{
+
+	width: 90%;
+	
+}
 
 	.block_heb{
 
