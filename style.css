@@ -821,7 +821,8 @@ Grands écrans d'ordinateurs et télévisions
 
 	.block_heb{
 
-		
+		display: flex;
+		flex-direction: column;
 		height: 220px;
 	
 	}
