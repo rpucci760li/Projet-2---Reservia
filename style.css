@@ -703,7 +703,7 @@ Grands écrans d'ordinateurs et télévisions
 
 	body{
 
-		width: 100%;
+		width: 99%;
 
 	}
 
@@ -1065,6 +1065,8 @@ Grands écrans d'ordinateurs et télévisions
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+
+		padding-top: 25px;
 
 	}
 
