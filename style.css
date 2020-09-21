@@ -10,9 +10,10 @@ body{
 
 	font-family: "raleway",arial, sans serif;
 
-	width: 90%;
-	margin: auto;
+	width: 95%;
+	height: auto;
 
+	margin: auto;
 
 }
 
@@ -702,8 +703,7 @@ Grands écrans d'ordinateurs et télévisions
 
 	body{
 
-		width: 99%;
-		margin: auto;
+		width: 100%;
 
 	}
 
@@ -918,9 +918,9 @@ Grands écrans d'ordinateurs et télévisions
 
 	.nav_foot{
 
-	width: 90%;
+	width: 100%;
 	
-}
+	}
 
 }
 
@@ -932,13 +932,6 @@ Grands écrans d'ordinateurs et télévisions
 */
 
 @media screen and (max-width: 1024px){
-
-	body{
-
-		width: 95%;
-		margin: auto;
-
-	}
 
 	.text_city{
 	
@@ -1033,8 +1026,6 @@ Grands écrans d'ordinateurs et télévisions
 	width: auto;
 	margin: 0;
 	
-	border-radius: 0;
-	
 	}
 
 	.space_heb_pop{
@@ -1122,12 +1113,6 @@ Grands écrans d'ordinateurs et télévisions
 		justify-content: space-around;
 
 	}
-
-	.nav_foot{
-
-	width: 90%;
-	
-}
 
 }	
 
