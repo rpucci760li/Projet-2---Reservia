@@ -805,8 +805,10 @@ Grands écrans d'ordinateurs et télévisions
 	}
 
 	.house{
-	
-	flex: 1;
+
+	display: flex;
+	flex-direction: column;
+
 	width: 375px;
 
 	background-color: white;
@@ -849,7 +851,9 @@ Grands écrans d'ordinateurs et télévisions
 
 	.heb_pop{
 
-	flex: 1;
+	display: flex;
+	flex-direction: column;
+	
 	width: 375px;
 	margin: 0;
 	
