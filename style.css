@@ -30,6 +30,7 @@ body{
 }
 
 .headerresp{
+
 	display: none;
 }
 
@@ -712,6 +713,7 @@ Grands écrans d'ordinateurs et télévisions
 	.header{
 
 		display: none
+		
 	}
 
 	.headerresp{
