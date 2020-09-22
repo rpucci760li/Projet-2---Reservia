@@ -29,6 +29,10 @@ body{
 
 }
 
+.headerresp{
+	display: none;
+}
+
 .logo{
 
 	width: 20%;
@@ -703,6 +707,104 @@ Grands écrans d'ordinateurs et télévisions
 
 @media screen and (max-width: 767px){
 
+	/*Menu navigation*/
+
+	.header{
+
+		display: none
+	}
+
+	.headerresp{
+
+		display: flex;
+		flex-direction: column;
+
+	}
+
+	.navr{
+
+		width: 100%;
+		height: 100px;
+
+		margin: 0;
+		padding: 0;
+
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+	}
+
+	.logor{
+
+		width: 40%;
+		height: 40px;
+
+		margin-left: 5px;
+
+		background-image: url(images/logo/Reservia@3x.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		
+	}
+
+	.nav__linkr{
+
+		width: 100%;
+		height: 50px;
+
+		list-style: none;
+		text-align: center;
+
+	}
+
+	.ligne{
+
+		height: 3px;
+		width: 100%;
+
+		background-color: #F2F2F2;
+
+		margin-top: 10px;
+	}
+
+	.nav__linkr:hover{
+
+		color: #0065FC;
+
+	}
+
+	.nav__link--1{
+
+		width: 40%;
+		height: 50px;
+
+		list-style: none;
+
+		margin-right: 5px;
+
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+	}
+
+	.navd{
+
+		text-decoration: none;
+		color: black;
+		font-size: 20px;
+
+	}
+
+	.nav-s{
+
+		text-decoration: none;
+		font-weight: bold;
+		color:#0065FC;
+
+		font-size: 20px;
+
+	}
 
 	/*Rechercher*/
 
