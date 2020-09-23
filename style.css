@@ -706,7 +706,14 @@ Ordinateurs (992 px - 1199 px)
 Grands écrans d'ordinateurs et télévisions
 */
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 768px){
+
+	body{
+
+		width: 99%;
+		margin: 0 auto;
+	}
+
 
 	/*Menu navigation*/
 
@@ -912,7 +919,7 @@ Grands écrans d'ordinateurs et télévisions
 
 	.block_heb{
 
-		width: 350px;
+		width: 100%;
 	
 	}
 
@@ -936,8 +943,7 @@ Grands écrans d'ordinateurs et télévisions
 	display: flex;
 	flex-direction: column;
 
-	width: auto;
-	margin: 0;
+	width: 100%;
 	
 	border-radius: 0;
 	
@@ -945,7 +951,7 @@ Grands écrans d'ordinateurs et télévisions
 
 	.block_heb_pop{
 
-	width: auto;
+	width: 90%;
 	height: 180px;
 
 	}
@@ -958,7 +964,7 @@ Grands écrans d'ordinateurs et télévisions
 
 	.img_pop{
 
-	width: 180px;
+	width: 95%;
 	height: 170px;
 
 	}
@@ -1037,7 +1043,7 @@ Ordinateurs (992 px - 1199 px)
 Grands écrans d'ordinateurs et télévisions
 */
 
-@media screen and (max-width: 1199px){
+@media screen and (min-width: 769px) and (max-width: 1199px){
 
 	.text_city{
 	
@@ -1070,7 +1076,7 @@ Grands écrans d'ordinateurs et télévisions
 
 	.sec_heb{
 
-		flex-direction: column;
+		flex-direction: column-reverse;
 		align-content: center;
 	}
 
@@ -1083,7 +1089,7 @@ Grands écrans d'ordinateurs et télévisions
 		width: auto;
 
 		margin-right: 0px;
-		margin-bottom: 10px;
+		margin-top: 10px;
 
 	}
 
@@ -1105,7 +1111,7 @@ Grands écrans d'ordinateurs et télévisions
 
 	.block_heb{
 
-		width: 350px;
+		width: 45%;
 	
 	}
 
@@ -1145,7 +1151,7 @@ Grands écrans d'ordinateurs et télévisions
 
 	.block_heb_pop{
 
-	width: 350px;
+	width: 45%;
 	height: 180px;
 
 	}
@@ -1159,7 +1165,7 @@ Grands écrans d'ordinateurs et télévisions
 
 	.img_pop{
 
-	width: 180px;
+	width: 95%;
 	height: 170px;
 
 	}
@@ -1188,7 +1194,7 @@ Grands écrans d'ordinateurs et télévisions
 		display: flex;
 		flex-direction: column;
 		
-		width: 350px;
+		width: 50%;
 		height: auto;
 
 		margin: 10px;
