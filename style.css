@@ -935,16 +935,17 @@ Les très petits écrans
 	display: flex;
 	flex-direction: column;
 
-	
-	
+	width: 100%;
+	height: auto;
+
 	border-radius: 0;
 	
 	}
 
 	.block_heb_pop{
 
-
-
+		width: 90%;
+		height: 170px;
 	}
 
 	.titre_heb_pop{
@@ -955,8 +956,8 @@ Les très petits écrans
 
 	.img_pop{
 
-	width: 95%;
-	height: 170px;
+	width: 50%;
+	height: 160px;
 
 	}
 
