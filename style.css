@@ -1006,6 +1006,7 @@ Les très petits écrans
 	.resp{
 
 	margin: 0px;
+	margin-top: 20px;
 
 	}
 
@@ -1529,7 +1530,7 @@ Laptop (768 px - 1024 px)
 		width: 45%;
 		height: auto;
 
-		margin: 10px;
+		margin: 0px;
 
 	}
 
@@ -1539,6 +1540,7 @@ Laptop (768 px - 1024 px)
 		height: 180px;
 
 		margin: 0;
+		margin-top: 20px;
 
 	}
 
