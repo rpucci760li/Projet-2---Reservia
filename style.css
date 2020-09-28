@@ -9,9 +9,7 @@ src: 	url('raleway/Raleway-VariableFont_wght.ttf') format('truetype'),
 body{
 
 	font-family: 'raleway',arial, sans serif;
-
 	width: 90%;
-	height: auto;
 
 	margin: auto;
 
@@ -541,7 +539,6 @@ body{
 .activ__conten{
 
 	display: flex;
-	justify-content: space-between;
 
 }
 
@@ -551,7 +548,15 @@ body{
 	height: auto;
 
 	display: flex;
-	justify-content: center;
+
+}
+
+.big_photo{
+
+	width: 100%;
+	height: auto;
+
+	display: flex;
 
 }
 
@@ -559,20 +564,23 @@ body{
 
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-between;
+
+	width: 100%;
+	height: auto;
 
 }
 
 .gphoto{
 	
-	width: 300px;
+	width: 90%;
 	height: 400px;
 
 }
 
 .sphoto{
 	
-	width: 300px;
+	width: 100%;
 	height: 190px;
 
 }
@@ -588,7 +596,6 @@ body{
 	background-position: center;
 
 	position: relative;
-	margin: 10px;
 
 }
 
@@ -707,6 +714,11 @@ Les très petits écrans
 
 @media screen and (max-width: 425px) {
 
+	body{
+
+		margin: 0 auto;
+	}
+
 	/*Menu navigation*/
 
 	.header{
@@ -791,6 +803,17 @@ Les très petits écrans
 
 	}
 
+	.navd:active{
+
+		color:#0065FC;
+
+	}
+
+	.ligne:active{
+
+		color:#0065FC;
+	}
+
 
 	.nav-s{
 
@@ -812,8 +835,8 @@ Les très petits écrans
 
 	.text_city{
 	
-		width: 50%;
-		font-size: 20px;
+		width: 60%;
+		font-size: 16px;
 	
 	}
 
@@ -893,6 +916,8 @@ Les très petits écrans
 		flex-direction: column;
 		align-content: center;
 
+		width: 100%;
+
 	}
 
 	.titre_heb{
@@ -906,14 +931,14 @@ Les très petits écrans
 
 	.block_heb{
 
-		min-width: 350px;
+		width: 99%;
 	
 	}
 
 	.img_heb{
 	
-		width: 98%;
-		height: 120px;
+		width: 97%;
+		height: 100px;
 
 	}
 
@@ -962,9 +987,6 @@ Les très petits écrans
 		
 		display: flex;
 		flex-direction: column;
-		align-items: center;
-
-		width: 100%;
 
 		padding-top: 25px;
 
@@ -972,37 +994,48 @@ Les très petits écrans
 
 	.tit_act{
 
-	padding-left: 0px;
+		padding-left: 0px;
+		text-align: center;
 
 	}
 	
 	.activ__conten{
 		
-		display: flex;
 		flex-direction: column;
-		align-content: center;
 
+		width: 100%;
+		height: auto;
 	}
 
 	.int_carte{
 		
 		flex-direction: column;
-		align-content: center;	
+
 
 		width: 100%;
+		height: auto;
 
 	}
 
+
 	.gphoto{
 
-		height: 180px;
+		width: 99%;
+		height: 190px;
+
+	}
+
+
+	.sphoto{
+	
+		width: 99%;
 
 	}
 
 	.resp{
 
-	margin: 0px;
-	margin-top: 20px;
+		margin: 0px;
+		margin-top: 20px;
 
 	}
 
@@ -1491,64 +1524,8 @@ Laptop (768 px - 1024 px)
 
 	/*Activités*/
 	
-	.activ{
-		
-		display: flex;
-		flex-direction: column;
-		align-items: center;
 
-		width: 100%;
-
-		padding-top: 25px;
-
-	}
-
-	.tit_act{
-
-	padding-left: 0px;
-
-	}
-
-	.activ__conten{
-		
-		display: flex;
-		align-content: center;
-
-		width: 100%;
-
-	}
-
-	.int_carte{
-		
-		display: flex;
-		flex-direction: column;
-		
-		width: 45%;
-		height: auto;
-
-		margin: 0px;
-
-	}
-
-	.resp{
-
-		width: 100%;
-		height: 180px;
-
-		margin: 0;
-		margin-top: 20px;
-
-	}
-
-	.text_photo_act{
-
-	
-	width: 100%;
-	height: 50px;
-
-	}
-
-		/*Footer*/
+	/*Footer*/
 
 	.footer{
 	 	
