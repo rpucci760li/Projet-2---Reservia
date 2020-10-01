@@ -1,5 +1,5 @@
 @font-face{
-	font-family: 'Raleway';
+	font-family: 'raleway';
 src: 	url('raleway/Raleway-VariableFont_wght.ttf') format('truetype'),
 		url('raleway/Raleway-Italic-VariableFont_wght.ttf') format('truetype');
 }
@@ -13,6 +13,10 @@ body{
 
 	margin: auto;
 
+}
+
+h1, h2 div, a{
+	font-family: 'raleway',arial, sans serif;
 }
 
 /*Header*/
