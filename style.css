@@ -949,7 +949,7 @@ Les très petits écrans
 
 	.img_heb{
 	
-		width: 97%;
+		width: auto;
 		height: 100px;
 
 	}
@@ -1293,7 +1293,7 @@ Tablettes
 
 	.img_heb{
 	
-		width: 98%;
+		width: auto;
 		height: 120px;
 
 	}
@@ -1478,7 +1478,7 @@ Laptop (768 px - 1024 px)
 
 	.img_heb{
 	
-		width: 98%;
+		width: auto;
 		height: 120px;
 
 	}
