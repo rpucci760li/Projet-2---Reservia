@@ -1022,6 +1022,8 @@ Les très petits écrans
 		width: 100%;
 		height: auto;
 
+		margin: 0 auto;
+
 	}
 
 
@@ -1342,12 +1344,6 @@ Tablettes
 		padding-top: 25px;
 
 	}
-
-	.tit_act{
-
-		
-
-	}
 	
 	.activ__conten{
 		
@@ -1362,6 +1358,8 @@ Tablettes
 		padding-top: 25px;
 
 		justify-content: space-around;
+
+		margin: 0 auto;
 
 	}
 
