@@ -620,6 +620,11 @@ body{
 
 }
 
+.link_act{
+	text-decoration: none;
+	color: black;
+}
+
 .text_act{
 
 	padding-left: 15px;
