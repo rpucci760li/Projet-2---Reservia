@@ -502,6 +502,18 @@ body{
 
 }	
 
+.text_heb_pop{
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	
+	width: 60%;
+	margin-left: 5px;
+	margin-bottom: 10px;
+		
+}
+
 /*Photos hébergements populaires*/
 .one_pop{
 
@@ -519,18 +531,6 @@ body{
 
 	background-image: url(images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
 
-}
-
-.text_heb_pop{
-
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	
-	width: 180px;
-	margin-left: 5px;
-	margin-bottom: 10px;
-		
 }
 
 /*Activités*/
@@ -625,11 +625,6 @@ body{
 
 }
 
-.link_act{
-	text-decoration: none;
-	color: black;
-}
-
 .text_act{
 
 	padding-left: 15px;
@@ -716,6 +711,11 @@ body{
 	margin: auto;
 	background-image: url(images/erreur404.jpg);
 	background-repeat: no-repeat;
+}
+
+.link_act{
+	text-decoration: none;
+	color: black;
 }
 
 /*Media Queries*/
@@ -1334,6 +1334,11 @@ Tablettes
 		width: 95%;
 		height: 170px;
 
+	}
+
+	.link_act--tab{
+	
+		width: 45%;
 	}
 
 	/*Activités*/
