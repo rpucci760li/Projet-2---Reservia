@@ -14,8 +14,13 @@ src:
 body{
 
 	font-family: 'raleway',arial, sans serif;
-	width: 90%;
+	margin: 0;
 
+}
+
+.body__with{
+
+	width: 90%;
 	margin: auto;
 
 }
@@ -682,6 +687,7 @@ body{
 	display: flex;
 	justify-content: flex-start;
 
+	padding-left: 25px;
 	padding-bottom: 25px;
 
 }
@@ -726,9 +732,18 @@ Les très petits écrans
 
 @media screen and (max-width: 425px) {
 
-	body{
+	.body__with{
 
-		margin: 0 auto;
+		width: 100%;
+
+	}
+
+	h2{
+		font-size: 22px;
+	}
+
+	p{
+		font-size: 14px;
 	}
 
 	/*Menu navigation*/
@@ -839,6 +854,11 @@ Les très petits écrans
 
 	/*Rechercher*/
 
+	.search__titre--resp{
+
+		padding-left: 10px;
+	}
+
 	.block_search{
 
 		justify-content: center;
@@ -880,6 +900,24 @@ Les très petits écrans
 
 	}
 
+	.info{
+
+	padding-left: 10px;
+
+	}
+
+	.icon_info{
+	
+
+
+	}
+
+	.info__text{
+
+	padding-left: 10px;
+
+	}
+
 	/*Filtres*/
 
 	.filtres{
@@ -914,7 +952,7 @@ Les très petits écrans
 		flex-direction: column;
 		align-items: center;
 
-		width: auto;
+		width: 100%;
 
 		margin-right: 0px;
 
@@ -943,7 +981,7 @@ Les très petits écrans
 
 	.block_heb{
 
-		width: 99%;
+		width: 90%;
 	
 	}
 
@@ -1024,7 +1062,7 @@ Les très petits écrans
 		flex-direction: column;
 
 
-		width: 100%;
+		width: 90%;
 		height: auto;
 
 		margin: 0 auto;
@@ -1060,14 +1098,15 @@ Les très petits écrans
 	 	height: auto;
 		display: flex;
 		flex-direction: column;
-		justify-content: space-around;
+
+		padding-left: 0;
 
 	}
 
 	.nav_foot{
 
 	width: 100%;
-	
+
 	}
 
 }
@@ -1079,6 +1118,11 @@ Tablettes
 */
 
 @media screen and (min-width: 426px) and (max-width: 768px){
+
+	.body__with{
+
+		width: 95%;
+	}
 
 	/*Menu navigation*/
 
@@ -1392,12 +1436,8 @@ Tablettes
 		display: flex;
 		justify-content: space-around;
 
-	}
+		padding-left: 0;
 
-	.nav_foot{
-
-	width: 100%;
-	
 	}
 
 }
