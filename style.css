@@ -31,14 +31,13 @@ body{
 	display: flex;
 	align-items: center;
 	padding-top: 40px;
-	max-width: 1900px;
 }
 
 /*Navigation*/
 
 .logo{
 
-	width: 70%;
+	width: 80%;
 	height: auto;
 	
 }
@@ -311,21 +310,20 @@ img{
 	
 }
 
-.block_heb{
-
-	width: 30%; 
-	min-width: 250px;
+.link_act{
+	text-decoration: none;
+	color: black;
+	width: 30%;
 	height: auto;
+	margin: 10px;
+}
+
+.block_heb{
 
 	display: flex;
 	flex-direction: column;
-
-	margin: 10px;
-
 	background-color: white;
-
 	border-radius: 15px;
-	
 	box-shadow: 1px 1px 5px #E2E0E0;
 }	
 
@@ -459,18 +457,20 @@ img{
 
 }
 
-.block_heb_pop{
+.link_hp{
+	text-decoration: none;
+	color: black;
 
 	width: 80%;
-	
 	height: 150px;
-	display: flex;
-
 	margin: 10px;
-	
+}
+
+.block_heb_pop{
+
+	display: flex;
 	background-color: white;
 	border-radius: 15px;
-	
 	box-shadow: 1px 1px 5px #E2E0E0;
 }
 
@@ -549,12 +549,12 @@ img{
 
 }
 
-.big_photo{
+.link_cabp{
 
 	width: 100%;
 	height: auto;
-
-	display: flex;
+	text-decoration: none;
+	color: black;
 
 }
 
@@ -573,6 +573,15 @@ img{
 	
 	width: 90%;
 	height: 400px;
+
+}
+
+.link_casp{
+
+	width: 100%;
+	height: 190px;
+	text-decoration: none;
+	color: black;
 
 }
 
@@ -703,11 +712,6 @@ img{
 	margin: auto;
 	background-image: url(images/erreur404.jpg);
 	background-repeat: no-repeat;
-}
-
-.link_act{
-	text-decoration: none;
-	color: black;
 }
 
 /*Media Queries*/
@@ -944,10 +948,8 @@ Les très petits écrans
 	
 	}
 
-	.block_heb{
-
+	.link_act{
 		width: 90%;
-	
 	}
 
 	.img_heb{
@@ -977,7 +979,7 @@ Les très petits écrans
 	
 	}
 
-	.block_heb_pop{
+	.link_hp{
 
 		width: 90%;
 		height: 170px;
@@ -1039,6 +1041,7 @@ Les très petits écrans
 
 		width: 99%;
 		height: 190px;
+		margin-top: 20px;
 
 	}
 
@@ -1049,7 +1052,7 @@ Les très petits écrans
 
 	}
 
-	.resp{
+	.link_casp{
 
 		margin: 0px;
 		margin-top: 20px;
@@ -1279,7 +1282,7 @@ Tablettes
 	
 	}
 
-	.block_heb{
+	.link_act{
 
 		width: 90%;
 	
@@ -1300,7 +1303,7 @@ Tablettes
 
 	/*Hébergements populaires*/
 
-	.block_heb_pop{
+	.link_hp{
 
 	width: 90%;
 	
@@ -1464,7 +1467,7 @@ Laptop (768 px - 1024 px)
 	
 	}
 
-	.block_heb{
+	.link_act{
 
 		width: 45%;
 	
@@ -1505,7 +1508,7 @@ Laptop (768 px - 1024 px)
 
 	}
 
-	.block_heb_pop{
+	.link_hp{
 
 	width: 45%;
 	height: 180px;
