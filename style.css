@@ -28,44 +28,25 @@ body{
 /*Header*/
 
 .header{
-
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
-
 	padding-top: 40px;
-
 	max-width: 1900px;
-
-}
-
-.headerresp{
-
-	display: none;
-}
-
-.logo{
-
-	width: 20%;
-	height: 60px;
-
-	background-image: url(images/logo/Reservia@3x.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-	
 }
 
 /*Navigation*/
 
-.nav{
+.logo{
 
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-
-	height: 60px;
+	width: 70%;
+	height: auto;
 	
+}
 
+img{
+
+	width: 15%;
+	height: auto;
 }
 
 .nav__link{
@@ -80,16 +61,21 @@ body{
 	text-decoration: none;
     color: black;
 
+    width: 10%;
+ 	height: auto;
+
+ 	padding-top: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+
+ 	border-top: 2px solid white;
+
 }
 
 .nav__deco:hover{
 
 	border-top: 2px solid #0065FC;
 	color: #0065FC;
-
-	padding-top: 30px;
-	padding-left: 10px;
-	padding-right: 10px;
 
 }
 
@@ -749,106 +735,85 @@ Les très petits écrans
 	/*Menu navigation*/
 
 	.header{
-
-		display: none
-		
+		flex-wrap: wrap;
+		padding-top: 15px;
 	}
 
-	.headerresp{
-
-		display: flex;
-		flex-direction: column;
-
+	#h1 {
+		order: 1;
+	
 	}
 
-	.navr{
-
-		width: 100%;
-		height: 80px;
-
-		margin: 0;
-		padding: 0;
-
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-
-	}
-
-	.logor{
-
-		width: 40%;
-		height: 40px;
-
-		margin-left: 5px;
-
-		background-image: url(images/logo/Reservia@3x.png);
-		background-size: contain;
-		background-repeat: no-repeat;
-		
-	}
-
-	.nav__linkr{
-
-		width: 100%;
-		height: 50px;
-
-		list-style: none;
+	#h2{
+		order: 3;
 		text-align: center;
+	}
+
+	#h3{
+		order: 4;
+		text-align: center;
+	}
+
+	#h4{
+		order: 2;
+		text-align: right;
+
 
 	}
 
-	.ligne{
-
-		height: 3px;
-		width: 100%;
-
-		background-color: #F2F2F2;
-
-		margin-top: 10px;
-	}
-
-	.nav__link--1{
+	img{
 
 		width: 40%;
-		height: 50px;
-
-		list-style: none;
-
-		margin-right: 5px;
-
-		display: flex;
-		justify-content: flex-end;
-		align-items: center;
-	}
-
-	.navd{
-
-		text-decoration: none;
-		color: black;
-		font-size: 20px;
+		height: auto;
 
 	}
 
-	.navd:active{
+	.logo{
+		width: 50%;
+	}
 
+	.nav__link{
+    	padding-right: 0px;
+	}
+
+	.hsresp{
+		width: 45%;
+		height: auto;
+		padding: 2.5%;
+	}
+
+	.sresp{
+		width: 45%;
+		height: auto;
+		border-bottom: 2px solid grey;
+		padding: 2.5%;
+	}
+
+	.sresp:active{
+
+		border-bottom: 2px solid #0065FC;
 		color:#0065FC;
+		animation-duration: 1s;
 
 	}
 
-	.ligne:active{
+	.nav__deco{
 
-		color:#0065FC;
+		width: 100%;
+	 	height: auto;
+
+	 	padding-top: 0px;
+		padding-left: 0px;
+		padding-right: 0px;
+
+		font-size: 14px;
+
 	}
 
+	.nav__deco:hover{
 
-	.nav-s{
-
-		text-decoration: none;
-		font-weight: bold;
-		color:#0065FC;
-
-		font-size: 20px;
+	border-top: none;
+	color: none;
 
 	}
 
@@ -1127,100 +1092,85 @@ Tablettes
 	/*Menu navigation*/
 
 	.header{
-
-		display: none
-		
+		flex-wrap: wrap;
+		padding-top: 15px;
 	}
 
-	.headerresp{
-
-		display: flex;
-		flex-direction: column;
-
+	#h1 {
+		order: 1;
+	
 	}
 
-	.navr{
-
-		width: 100%;
-		height: 100px;
-
-		margin: 0;
-		padding: 0;
-
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-
-	}
-
-	.logor{
-
-		width: 40%;
-		height: 40px;
-
-		margin-left: 5px;
-
-		background-image: url(images/logo/Reservia@3x.png);
-		background-size: contain;
-		background-repeat: no-repeat;
-		
-	}
-
-	.nav__linkr{
-
-		width: 100%;
-		height: 50px;
-
-		list-style: none;
+	#h2{
+		order: 3;
 		text-align: center;
+	}
+
+	#h3{
+		order: 4;
+		text-align: center;
+	}
+
+	#h4{
+		order: 2;
+		text-align: right;
+
 
 	}
 
-	.ligne{
-
-		height: 3px;
-		width: 100%;
-
-		background-color: #F2F2F2;
-
-		margin-top: 10px;
-	}
-
-	.nav__linkr:hover{
-
-		color: #0065FC;
-
-	}
-
-	.nav__link--1{
+	img{
 
 		width: 40%;
-		height: 50px;
-
-		list-style: none;
-
-		margin-right: 5px;
-
-		display: flex;
-		justify-content: flex-end;
-		align-items: center;
-	}
-
-	.navd{
-
-		text-decoration: none;
-		color: black;
-		font-size: 20px;
+		height: auto;
 
 	}
 
-	.nav-s{
+	.logo{
+		width: 50%;
+	}
 
-		text-decoration: none;
-		font-weight: bold;
+	.nav__link{
+    	padding-right: 0px;
+	}
+
+	.hsresp{
+		width: 45%;
+		height: auto;
+		padding: 2.5%;
+	}
+
+	.sresp{
+		width: 45%;
+		height: auto;
+		border-bottom: 2px solid grey;
+		padding: 2.5%;
+	}
+
+	.sresp:active{
+
+		border-bottom: 2px solid #0065FC;
 		color:#0065FC;
+		animation-duration: 1s;
 
-		font-size: 20px;
+	}
+
+	.nav__deco{
+
+		width: 100%;
+	 	height: auto;
+
+	 	padding-top: 0px;
+		padding-left: 0px;
+		padding-right: 0px;
+
+		font-size: 14px;
+
+	}
+
+	.nav__deco:hover{
+
+	border-top: none;
+	color: none;
 
 	}
 
