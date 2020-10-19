@@ -817,7 +817,7 @@ Les très petits écrans
 	.nav__deco:hover{
 
 	border-top: none;
-	color: none;
+	color: transparent;
 
 	}
 
